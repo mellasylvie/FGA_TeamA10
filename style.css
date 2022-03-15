@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -69,15 +72,22 @@ nav ul li a:hover {
         0 0 10px #132238;
 }
 
+.container {
+    height : auto;
+    margin: 20px 100px;
+}
+
 .paket-wisata {
-    width: 80%;
     height: 300px;
     margin: auto;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .paket-wisata h3 {
-    color: blue;
+    /* font-size: 30px; */
+    color: #39A2DB;
 }
 
 .wrapper {
@@ -102,6 +112,75 @@ nav ul li a:hover {
     color: orange;
 }
 
-.wrapper a {
-    text-decoration: none;
+.wrapper .subjudul {
+    color: #39A2DB;
+}
+
+.form-booking {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.form-booking .container {
+    border-radius: 20px;
+    background-color: #39A2DB;
+    color: white;
+    padding: 20px 80px 50px 80px;
+}
+
+.form-booking h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    padding-left: 12px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.row {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.row .nm,.mail {
+    flex-grow: 5;
+}
+
+.row .nomor, .jumlah, .tgl {
+    flex-grow: 3;
+}
+
+.row .wst,.catatan {
+    flex-grow: 10;
+}
+
+.btn_submit {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    background-color: #1C658C;
+    color: white;
+    border-style: none;
+}
+
+footer {
+    height: 50px;
+    background-color: #39A2DB;
 }
