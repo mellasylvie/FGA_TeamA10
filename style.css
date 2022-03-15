@@ -1,37 +1,20 @@
-<<<<<<< HEAD
-
-
-.paket-wisata {
-    width: 100%;
-    height: 100px;    
-    text-align: center;    
-}
-
-.wrapper {
-    width: 25%;
-    height: 50px;
-    margin: 10px 25px;    
-}
-
-.paket img{
-    margin: 25px;
-    width: 25%;
-    height: 100px;
-}
-=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: auto;
     padding: auto;
 }
+
 header {
     display: inline;
 }
-marquee{
+
+marquee {
     font-size: 16px;
     padding: 8px;
 }
+
 nav {
     background-color: #39A2DB;
     padding: 3px;
@@ -39,12 +22,14 @@ nav {
     top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
-nav:after{
+
+nav:after {
     content: '';
     clear: both;
     display: table;
 }
-nav .logo{
+
+nav .logo {
     float: left;
     color: #fff;
     font-size: 36px;
@@ -53,30 +38,70 @@ nav .logo{
     padding-top: 5px;
     margin-left: 50px;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 40px;
     list-style: none;
     position: relative;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     display: inline-block;
     background: #39A2DB;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     line-height: 50px;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 15px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     background-color: #1C658C;
     color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 0 5px #364e68,
-                0 0 10px #132238;
- }
->>>>>>> 90518a2889c4e8ec97b910ca68e72929fc117d6c
+        0 0 10px #132238;
+}
+
+.paket-wisata {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.paket-wisata h3 {
+    color: blue;
+}
+
+.wrapper {
+    width: 21%;
+    height: 222px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.wrapper img {
+    width: 80%;
+    height: 50%;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.wrapper img:hover {
+    cursor: pointer;
+}
+
+.wrapper p {
+    color: orange;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
