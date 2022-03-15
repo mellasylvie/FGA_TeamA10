@@ -193,11 +193,32 @@ textarea {
     border-radius: 10px;
 }
 
-.btn_kirim:hover {
+.btn_kirim:hover {`
     opacity: 0.8;
 }
 
 footer {
-    height: 50px;
     background-color: #39A2DB;
+    color:#fff;
+    width: 100%;
+    height: 120px;
+
+}
+.footer-left {
+    float:left;
+    padding: 0px 20px;
+}
+.footer-left h1{
+    margin-bottom: -10px;
+}
+.footer-left p{
+    font-size: 12px;
+}
+.footer-right{
+    float: right;
+}
+.footer-right p{
+    margin-bottom: -10px;
+    padding-right: 20px;
+    fon
 }
