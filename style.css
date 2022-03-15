@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -21,7 +25,7 @@ marquee {
 nav {
     background-color: #39A2DB;
     padding: 3px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
@@ -78,42 +82,50 @@ nav ul li a:hover {
 }
 
 .paket-wisata {
-    height: 300px;
-    margin: auto;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
 .paket-wisata h3 {
-    /* font-size: 30px; */
+    font-size: 30px;
     color: #39A2DB;
 }
 
-.wrapper {
-    width: 21%;
-    height: 222px;
-    display: inline-block;
-    margin: 10px 10px;
+.paket-wisata-wrapper {
+    float: left;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.wrapper img {
-    width: 80%;
-    height: 50%;
-    margin: 10px 0px;
+.paket-wisata-wrapper img {
+    width: 100%;
+    height: 187px;
     border-radius: 10px;
 }
 
-.wrapper img:hover {
+.paket-wisata-wrapper img:hover {
     cursor: pointer;
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
 }
 
-.wrapper p {
+.paket-wisata-wrapper p {
     color: orange;
 }
 
-.wrapper .subjudul {
+.paket-wisata-wrapper .subjudul {
     color: #39A2DB;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .form-booking {
@@ -172,12 +184,17 @@ textarea {
     flex-grow: 10;
 }
 
-.btn_submit {
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
+
+.btn_kirim {
     background-color: #1C658C;
+    text-decoration: none;
     color: white;
-    border-style: none;
+    padding: 15px 70px;
+    border-radius: 10px;
+}
+
+.btn_kirim:hover {
+    opacity: 0.8;
 }
 
 footer {
