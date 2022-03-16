@@ -198,6 +198,10 @@ nav ul li a:hover {
     font-size: 30px;
 }
 
+.form-booking .container .teks {
+    text-align: justify;
+}
+
 label {
     padding-bottom: 10px;
     display: inline-block;
