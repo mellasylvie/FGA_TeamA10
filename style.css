@@ -76,12 +76,22 @@ nav ul li a:hover {
         0 0 10px #132238;
 }
 
+.jumbotron img{
+    width: 100%;
+}
 .container {
     height : auto;
     margin: 20px 100px;
     /* margin: 20px 75px; */
 }
-
+.main-home h3{
+    font-size: 30px;
+    color: #39A2DB;
+    text-align: center;
+}
+.main-home p{
+    text-align: justify;
+}
 .keunggulan {
     padding-top: 25px;
     padding-bottom: 25px;
