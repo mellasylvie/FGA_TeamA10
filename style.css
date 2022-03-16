@@ -336,3 +336,35 @@ footer p{
         height: 170px;
     }
 }
+
+@media all and (max-width: 550px) {
+    .container {
+        margin: 20px 30px;
+    }
+
+    .form-booking .row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .paket-wisata-wrapper img {
+        width: 250px;
+        height: 170px;
+    }
+
+    .keunggulan-wrapper {
+        width: 40%;
+    }
+
+    .keunggulan-wrapper img {
+        width: 40%;
+        height: 15%;
+    }
+
+    .form-booking .container {
+        padding: 5px 20px 12px 20px;
+    }
+}
