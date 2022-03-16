@@ -79,20 +79,28 @@ nav ul li a:hover {
 .container {
     height : auto;
     margin: 20px 100px;
+    /* margin: 20px 75px; */
+}
+
+.keunggulan {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .keunggulan-wrapper {
-    float: center;
+    float: left;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .keunggulan-wrapper img {
-    width: 128px;
-    height: 128px;
+    width: 50%;
+    height: 40%;
     border-radius: 10px;
-    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .keunggulan-wrapper img:hover {
@@ -103,7 +111,8 @@ nav ul li a:hover {
 
 .keunggulan-wrapper p {
     color: black;
-    text-align: center;
+    /* text-align: center; */
+    text-align: justify;
 }
 
 .keunggulan-wrapper .keterangan {
@@ -130,7 +139,8 @@ nav ul li a:hover {
 }
 
 .paket-wisata-wrapper img {
-    width: 100%;
+    width: 95%;
+    /* width: 250px; */
     height: 187px;
     border-radius: 10px;
 }
@@ -168,6 +178,9 @@ nav ul li a:hover {
     background-color: #39A2DB;
     color: white;
     padding: 20px 80px 50px 80px;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .form-booking h3 {
@@ -202,6 +215,10 @@ textarea {
     gap: 15px;
 }
 
+.keunggulan .container .row {
+    gap:40px;
+}
+
 .row .nm,.mail {
     flex-grow: 5;
 }
@@ -218,12 +235,13 @@ textarea {
 .btn_kirim {
     background-color: #1C658C;
     text-decoration: none;
+    text-align: center;
     color: white;
     padding: 15px 70px;
     border-radius: 10px;
 }
 
-.btn_kirim:hover {`
+.btn_kirim:hover {
     opacity: 0.8;
 }
 
@@ -234,7 +252,7 @@ footer {
     color: white;
     text-align: center;
     -moz-border-radius: 100px;
- }
+}
 footer h1{
     text-align: center;
     margin-bottom: 5px;
@@ -243,4 +261,68 @@ footer p{
     text-align: center;
     margin-top: 3px;
     font-size: 15px;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media all and (max-width: 1170px) {
+    .container {
+        margin: 20px 75px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .keunggulan-wrapper {
+        width: 35%;
+    }
+
+    .paket-wisata-wrapper img {
+        width: 280px;
+        height: 170px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+    /* .container {
+        margin: 20px 75px;
+    } */
+
+    /* .row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } */
+
+    .keunggulan-wrapper {
+        width: 40%;
+    }
+
+    /* .paket-wisata-wrapper img {
+        width: 280px;
+        height: 170px;
+    } */
+}
+
+/* Smartphone */
+@media all and (max-width: 670px) {
+    .container {
+        margin: 20px 50px;
+    }
+
+    .form-booking .row {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .paket-wisata-wrapper img {
+        width: 250px;
+        height: 170px;
+    }
 }
