@@ -81,6 +81,36 @@ nav ul li a:hover {
     margin: 20px 100px;
 }
 
+.keunggulan-wrapper {
+    float: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.keunggulan-wrapper img {
+    width: 128px;
+    height: 128px;
+    border-radius: 10px;
+    float: center;
+}
+
+.keunggulan-wrapper img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.keunggulan-wrapper p {
+    color: black;
+    text-align: center;
+}
+
+.keunggulan-wrapper .keterangan {
+    color:#39A2DB;
+    text-align: center;
+}
+
 .paket-wisata {
     text-align: center;
     padding-top: 25px;
